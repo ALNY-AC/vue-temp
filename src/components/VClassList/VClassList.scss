@@ -1,0 +1,38 @@
+@import "@/styles/variable.scss";
+
+.v-class-list {
+    padding: 35px 0;
+
+    .class-card {
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .v-title {
+            margin-bottom: 20px;
+        }
+
+        .class-info {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                white-space: nowrap;
+            }
+
+        }
+    }
+
+    .tool-box {
+        font-size: 14px;
+    }
+}
+
+.v-class-list /deep/ {
+    .el-date-editor {
+
+        input {
+            background-color: transparent !important;
+            border: none;
+        }
+    }
+}

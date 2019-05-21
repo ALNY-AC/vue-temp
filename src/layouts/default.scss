@@ -1,0 +1,55 @@
+@media print {
+
+    .head-box,
+    .menu-box {
+        display: none;
+    }
+
+    .view-box {
+        max-width: 100vh;
+    }
+}
+
+.default {
+    display: flex;
+
+    .menu-box {
+        width: 170px;
+        background-color: #021e34;
+        height: 100vh;
+    }
+
+    .view-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        .head-box {
+            background-color: #021e34;
+            height: 60px;
+        }
+
+        .content-box {
+            flex: 1;
+            overflow: auto;
+
+            .nuxt {}
+        }
+
+        .footer-box {
+            height: 40px;
+            background-color: #ffffff;
+        }
+    }
+
+    .el-menu.el-menu--horizontal {
+        border: none;
+    }
+
+    &/deep/ {
+        .el-menu--horizontal>.el-submenu .el-submenu__title {
+            border: none !important;
+        }
+    }
+}

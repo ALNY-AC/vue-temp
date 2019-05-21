@@ -1,0 +1,9 @@
+@import "@/styles/variable.scss";
+
+#info {
+    img {
+        max-width: 100%;
+    }
+}
+
+#info /deep/ {}

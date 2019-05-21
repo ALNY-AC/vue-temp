@@ -1,0 +1,10 @@
+@import "@/styles/variable.scss";
+
+.v-title {
+    color: $color-blue;
+    border-left: solid 4px $color-blue;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.v-title /deep/ {}

@@ -1,0 +1,32 @@
+.ru-menu {
+    .logo {
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+
+    .logo-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.ru-menu /deep/ {
+    .el-menu {
+        border: none;
+    }
+
+    .el-submenu__title i {
+        color: #fff;
+    }
+
+    .el-menu-item {
+        // background-color: #22252B !important;
+    }
+
+    .el-menu-item.is-active {
+        background-color: #22252B !important;
+    }
+}
