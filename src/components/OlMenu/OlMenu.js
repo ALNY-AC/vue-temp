@@ -1,10 +1,8 @@
 export default {
-    name: 'VClassList',
+    name: 'OlMenu',
     props: {},
     data() {
-        return {
-            date:''
-        };
+        return {};
     },
     methods: {
         // 用于初始化一些数据

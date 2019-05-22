@@ -1,20 +1,17 @@
 <template>
   <div class="default">
     <div class="menu-box">
-      <ru-menu></ru-menu>
+      <ol-menu></ol-menu>
     </div>
     <div class="view-box">
       <div class="head-box">
-        <div class="float-right">
-          <el-menu mode="horizontal" background-color="#021e34" text-color="#fff" active-text-color="#fff">
-            <el-submenu index="2-4">
-              <template slot="title">医院管理员</template>
-              <el-menu-item index="2-4-3">设置</el-menu-item>
-              <el-menu-item index="2-4-3">退出登录</el-menu-item>
-            </el-submenu>
-          </el-menu>
-        </div>
-
+        <el-menu mode="horizontal" background-color="#fff" text-color="#333" active-text-color="#333">
+          <el-submenu index="2-4">
+            <template slot="title">代码狮</template>
+            <el-menu-item index="2-4-3">个人设置</el-menu-item>
+            <el-menu-item index="2-4-3">退出登录</el-menu-item>
+          </el-submenu>
+        </el-menu>
       </div>
       <div class="content-box">
         <nuxt class="nuxt" />

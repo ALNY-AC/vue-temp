@@ -15,7 +15,6 @@
 
     .menu-box {
         width: 170px;
-        background-color: #021e34;
         height: 100vh;
     }
 
@@ -26,7 +25,7 @@
         height: 100vh;
 
         .head-box {
-            background-color: #021e34;
+            background-color: #fff;
             height: 60px;
         }
 
@@ -43,13 +42,5 @@
         }
     }
 
-    .el-menu.el-menu--horizontal {
-        border: none;
-    }
 
-    &/deep/ {
-        .el-menu--horizontal>.el-submenu .el-submenu__title {
-            border: none !important;
-        }
-    }
 }

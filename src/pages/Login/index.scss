@@ -1,37 +1,4 @@
 @import "@/styles/variable.scss";
+#login {}
 
-#Login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    .login-center {
-
-        .title {
-            color: #39D2CC;
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 65px;
-        }
-
-        .forms {
-            width: 320px;
-            margin: 0 auto;
-        }
-    }
-
-    .login-center {
-        .forms-bottom {
-            margin-bottom: 20px;
-        }
-    }
-}
-
-#Login /deep/ {
-    .el-input {
-        overflow: hidden;
-        border-radius: 20px;
-    }
-}
+#login /deep/ {}

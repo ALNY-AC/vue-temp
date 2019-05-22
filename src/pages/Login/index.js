@@ -1,15 +1,7 @@
 export default {
-    name: 'Login',
-    layout: 'login',
+    name: 'login',
     data() {
-        return {
-            form: {
-                username: '',
-                password: '',
-                code: ''
-            }
-
-        };
+        return {};
     },
     methods: {
         // 用于初始化一些数据
