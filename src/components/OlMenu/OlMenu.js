@@ -1,6 +1,11 @@
 export default {
     name: 'OlMenu',
-    props: {},
+    props: {
+        collapse: {
+            type: Boolean,
+            default: false,
+        }
+    },
     data() {
         return {};
     },

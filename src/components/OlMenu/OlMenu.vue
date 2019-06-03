@@ -1,13 +1,7 @@
 <template>
   <div class="ol-menu">
-    <el-menu unique-opened router>
-      <div class="text-center">
-        <img src="/images/logo.png" class="logo" alt="">
-      </div>
-      <div class="logo-title">
-        <div style="color:#333">管理模板</div>
-        <div style="color:#b2b2b2;font-size:10px">管理员</div>
-      </div>
+    <el-menu unique-opened router class="el-ol-menu" :collapse-transition="false" :collapse="collapse">
+
       <el-menu-item index="/" :route="{path:'/'}">
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>

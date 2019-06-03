@@ -1,13 +1,19 @@
 <template>
   <div class="default">
     <div class="menu-box">
-      <ol-menu></ol-menu>
+      <div class="title" :style="{width:isCollapse?'64px':'auto'}">
+        <!-- 管理系统 -->
+      </div>
+      <ol-menu :collapse="isCollapse"></ol-menu>
+      <div class="switch" @click="isCollapse=!isCollapse" :style="{width:isCollapse?'64px':'auto'}">
+        <i :class="{'el-icon-arrow-left':!isCollapse,'el-icon-arrow-right':isCollapse}"></i>
+      </div>
     </div>
     <div class="view-box">
       <div class="head-box">
         <el-menu mode="horizontal" background-color="#fff" text-color="#333" active-text-color="#333">
           <el-submenu index="2-4">
-            <template slot="title">代码狮</template>
+            <template slot="title">管理员</template>
             <el-menu-item index="2-4-3">个人设置</el-menu-item>
             <el-menu-item index="2-4-3">退出登录</el-menu-item>
           </el-submenu>
@@ -25,7 +31,9 @@
 export default {
   middleware: "root",
   data() {
-    return {};
+    return {
+      isCollapse: true
+    };
   },
   mounted() {},
   methods: {},

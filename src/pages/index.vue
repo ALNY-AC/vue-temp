@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h1>Hello</h1>
+  <div class="page-padding">
+    <el-card shadow="never">
+      <h1>Hello Word</h1>
+    </el-card>
   </div>
 </template>
 

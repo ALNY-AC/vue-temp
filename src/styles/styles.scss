@@ -18,6 +18,11 @@ a {
 
 body {
     background-color: #f6f6f6;
+    color: #333;
+}
+
+.page-padding {
+    padding: 20px;
 }
 
 .clearfix {
@@ -69,12 +74,6 @@ body {
     float: left;
 }
 
-.form-img {
-    width: 300px;
-    max-width: 100%;
-    display: block;
-}
-
 .window-scrollbar {
     overflow-y: auto;
 
@@ -99,9 +98,4 @@ body {
     &::-webkit-scrollbar-thumb:hover {
         background-color: #008982;
     }
-}
-
-.el-card {
-    background-color: #021e34;
-    border: none;
 }

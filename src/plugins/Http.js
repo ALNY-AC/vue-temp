@@ -37,10 +37,6 @@ let Http = axios.create({
 
 // // 添加一个响应拦截器
 Http.interceptors.response.use(function (response) {
-
-    console.warn(response);
-    response.config.baseURL = 'https://apidev.ruibei365.com/api/';
-
     return response.data;
 }, function (error) {
     console.error('接口错误');
