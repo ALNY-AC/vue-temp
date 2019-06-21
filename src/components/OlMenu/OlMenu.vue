@@ -6,10 +6,15 @@
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
+      <el-menu-item index="/list" :route="{path:'/list'}">
+        <i class="el-icon-menu"></i>
+        <span slot="title">表格</span>
+      </el-menu-item>
       <el-menu-item index="/login" :route="{path:'/login'}">
         <i class="el-icon-monitor"></i>
         <span slot="title">退出登录</span>
       </el-menu-item>
+
     </el-menu>
   </div>
 </template>
