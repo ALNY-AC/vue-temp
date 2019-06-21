@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{312:function(e,t,n){"use strict";n.r(t);var r={},l=n(14),component=Object(l.a)(r,function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"page-padding"},[t("el-card",{attrs:{shadow:"never"}},[t("h1",[this._v("Hello Word")])])],1)},[],!1,null,"37e5d6a6",null);t.default=component.exports}}]);
