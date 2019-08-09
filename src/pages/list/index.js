@@ -2,10 +2,13 @@ export default {
     name: 'list',
     data() {
         return {
-            loading: false,
-            list: [],
-            page: 1,
-            pageSize: 10,
+            loading: false,//是否加载中
+            list: [],//表格展示数据
+            page: 1,//当前页数
+            pageSize: 10,//页面大小
+            date: [],//日期数组
+            state: '',//状态
+            key: '',//关键词
         };
     },
     methods: {
@@ -15,21 +18,13 @@ export default {
         },
         // 用于更新一些数据
         async update() {
-            // this.loading = true;
+            this.loading = true;
             this.list = [];
-            for (let i = (this.page - 1) * this.pageSize; i < (this.page - 1) * this.pageSize + this.pageSize; i++) {
-                this.list.push({
-                    p1: 'p1-' + i,
-                    p2: 'p2-' + i,
-                    p3: 'p3-' + i,
-                    p4: 'p4-' + i,
-                    p5: 'p5-' + i,
-                    p6: 'p6-' + i,
-                    p7: 'p7-' + i,
-                    p8: 'p8-' + i,
-                    p9: 'p9-' + i,
-                });
-            }
+            const res = await this.$http.post('', {
+                SearchKey: this.key,
+            });
+            this.list = res.data;
+            this.loading = false;
         },
     },
     // 计算属性
@@ -67,6 +62,8 @@ export default {
         pageSize() {
             this.update();
         },
+        date() {
+        }
     },
     // 组件列表
     components: {},

@@ -1,6 +1,7 @@
 // @ts-nocheck
 import Vue from 'vue';
 import U from './url.js';
+import Random from '../lib/tool/Random.js';
 
 
 Vue.prototype.$getUrl = function (url = '') {
@@ -45,14 +46,7 @@ Date.prototype.Format = function (fmt) { //author: meizz
      * @param int $length
      * @return 产生的随机字符串
      */
-Vue.prototype.$getRandom = function (length = 32, prefix = '') {
-  const chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'g', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  let result = prefix;
-  while (result.length < length) {
-    result += chars[Math.floor(Math.random() * chars.length)];
-  }
-  return result;
-}
+Vue.prototype.$getRandom = new Random().getRandom;
 
 //复制内容
 Vue.prototype.$copy = function (str) {
