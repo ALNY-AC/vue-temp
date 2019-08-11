@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import './config.js';
 import './url.js';
 import Http from './Http.js';
 import './components.js';
