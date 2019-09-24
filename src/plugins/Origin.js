@@ -40,6 +40,15 @@ Date.prototype.Format = function (fmt) { //author: meizz
   return fmt;
 };
 
+Array.prototype.last = function (num = 1) {
+  if (num == 1) {
+    return this[this.length - 1];
+  } else {
+    return this.splice((this.length) - num, num);
+  }
+}
+
+
 /**
      * 
      * 产生随机字符串
